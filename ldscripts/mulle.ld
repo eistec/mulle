@@ -23,8 +23,6 @@ SECTIONS
     {
         _vector_rom = .;
         KEEP(*(.vector_table))
-
-        . = _vector_rom + SIZEOF(.vector_table);
     } >flash
     ASSERT (. == 0x1bc, "Interrupt vector of invalid size.")
 
