@@ -39,7 +39,7 @@ int main(void)
 
     /* Setup interrupt(s) */
 
-    NVICISER2  |= 0x00200000;               /* Enable LPT interrupt
+    NVICISER2  |= 0x00200000;               /* Enable LPT interrupt */
 
     /* Don't return from main */
     for(;;)
