@@ -23,7 +23,7 @@ eeprom_type=0x46
 # Misc #
 ########
 
-filename="eeprom.tmp"   # Filename, leave empty to skip file writing
+#filename="eeprom.tmp"   # Filename, leave empty to skip file writing, useful for debugging.
 
 
 ###########
