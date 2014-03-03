@@ -1,9 +1,12 @@
 #!/bin/bash
 
+# exit on error
+set -e
+
 echo "Mulle Programmer v0.60 serial number flasher"
 
-TEMPLATE_CONF='mulle_programmer.conf.template'
-FTDI_EEPROM='ftdi_eeprom'
+TEMPLATE_CONF="$(dirname $0)/mulle_programmer.conf.template"
+FTDI_EEPROM="ftdi_eeprom"
 
 function cleanup {
     echo "Removing temporary file: '${MYCONFTMP}'"
