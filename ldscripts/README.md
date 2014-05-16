@@ -10,6 +10,22 @@ The easiest way is to copy the file `mulle.ld` from the `ldscripts/monolithic`
 directory to your source code directory. Then add `-T mulle.ld` to your
 `LDFLAGS`, most often inside a Makefile.
 
+Add the following to your project Makefile:
+
+    LDFLAGS = -T mulle.ld
+
+In order to build using the modular ldscripts, you need to tell the linker
+about the path to the `ldscripts/modular` directory and then add `-T
+MK60DN256VLL10.ld` to `LDFLAGS`:
+
+Using gcc, g++ or Clang for linking:
+
+    LDFLAGS = -Wl,-L/path/to/mulle/ldscripts/modular -T MK60DN256VLL10.ld
+
+Using ld for linking:
+
+    LDFLAGS = -L/path/to/mulle/ldscripts/modular -T MK60DN256VLL10.ld
+
 What is a linker script?
 ------------------------
 
