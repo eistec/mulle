@@ -652,15 +652,8 @@ heap_loop:
      * Watermark the stack.
      */
 
-/*
- * WRONG DIRECTION!!! Don't forget the stack grows DOWN!!!!
     ldr r0, =_stack_start
     ldr r1, =_stack_end
-    ldr r2, =0xefefefef
-*/
-
-    ldr r0, =_stack_end
-    ldr r1, =_stack_start
     ldr r2, =0xefefefef
 
 stack_loop:
