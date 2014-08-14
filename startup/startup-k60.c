@@ -117,8 +117,6 @@ reset_handler(void)
    * breakpoint when debugging the startup code.
    */
 
-  core_clocks_init_early();
-
   call_init_array(); /* or __libc_init_array() as provided by newlib or other libc */
 
   main();
