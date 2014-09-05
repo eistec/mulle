@@ -30,6 +30,6 @@ eeprom_type=0x46
 # Strings #
 ###########
 manufacturer="Eistec AB"                 # Manufacturer
-product="Mulle Programmer v0.60"         # Product
+product="Mulle Programmer v0.70"         # Product
 
 # Serial will be added by the update script.
