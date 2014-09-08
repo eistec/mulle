@@ -1,0 +1,18 @@
+define rl
+mon reset halt
+load
+mon reset halt
+end
+define rh
+mon reset halt
+end
+define rr
+mon reset
+end
+# define hook-step
+# mon cortex_m maskisr on
+# end
+# define hookpost-step
+# mon cortex_m maskisr off
+# end
+tar ext :3333
